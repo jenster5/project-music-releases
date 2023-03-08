@@ -4,8 +4,6 @@
 }
 
 body {
-  box-sizing: border-box;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -19,38 +17,76 @@ code {
     monospace;
 }
 
-.image-container{
-  max-width: 300px;
-  display:flex;
-  flex-direction: column;
- justify-content: center;
+hr {
+  border: 1px solid #212121;
 }
 
-.album-name{
-  font-family:Helvetica;
-  color:white;
-  font-size:14px;
-  
+.main-container {
+  padding: 10px;
 }
+
+.title {
+  font-weight: bold;
+  color:#ffff;
+  margin: 20px 20px 20px 20px;
+  font-size: 20px;
+  font-family: Helvetica;
+}
+
+
+.album-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.albums-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  height: max-content;
+  justify-items: center;
+  align-items: stretch;
+}
+
+
+.album-name {
+  text-decoration: none;
+  font-family: Helvetica;
+  color:#ffff;
+  font-weight: bold;
+}
+
 a:-webkit-any-link { 
   /*styling for artist name*/
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
   font-family:Helvetica;
-  font-size:16px;  
   color:var(--secondary-color);
 } 
+
+.btn-container {
+  border: 1px solid red;
+}
 
 .icons-container{
 max-width: 40px;
 max-height: 40px;
+border-radius: 20px;
 display:flex;
 flex-direction: row;
+align-items: center;
 justify-content: space-between;
+margin-left: 20px;
 
 }
 
 .heart-icon, .play-icon, .dots-icon {
   background-color: white;
+  width: 32px;
+  height: 32px;
+  filter: invert();
 }
 
 .icons-container:hover{
@@ -58,6 +94,16 @@ justify-content: space-between;
 }
 
 .play-icon:hover{
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.heart-icon:hover{
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.dots-icon:hover{
   transform: scale(1.1);
   opacity: 1;
 }
