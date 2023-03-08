@@ -53,6 +53,7 @@ hr {
   height: max-content;
   justify-items: center;
   align-items: stretch;
+  border: 1px solid yellow;
 }
 
 
