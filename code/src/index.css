@@ -21,10 +21,18 @@ hr {
   border: 1px solid #212121;
 }
 
+h2 {
+  margin: 0px;
+ 
+}
+
+h1{
+  margin: 0px;
+}
+
 .main-container {
   padding: 10px;
   font-family: Helvetica;
-  font-size: 20px;
   align-items: center;
   color: white;
 }
@@ -33,11 +41,13 @@ hr {
   font-weight: bold;
   color:#ffff;
   margin: 20px 20px 20px 20px;
-  font-size: 20px;
+  font-size: 14px;
   font-family: Helvetica;
 }
 
 .album-image {
+  padding-top: 10px;
+  padding-bottom: 10px;
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -62,7 +72,7 @@ hr {
   font-family: Helvetica;
   color:#ffff;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .album-name:hover{
@@ -74,6 +84,7 @@ a:-webkit-any-link {
   text-decoration: none;
   text-underline-offset: 3px;
   font-family:Helvetica;
+  font-size: 14px;
   color:var(--secondary-color);
 } 
 
@@ -86,9 +97,14 @@ a:-webkit-any-link:hover{
   position: relative;
 }
 
-.btn-image-container:hover{
-  opacity: 1;
+/*
+.btn-image-container:hover .icons-container{
+ visibility: visible;
 }
+
+.btn-image-container .icons-container{
+  visibility:hidden;
+}*/
 
 .icons-container {
   cursor: pointer;
