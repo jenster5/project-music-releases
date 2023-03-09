@@ -55,9 +55,7 @@ hr {
   height: max-content;
   justify-items: center;
   align-items: stretch;
-  border: 1px solid yellow;
 }
-
 
 .album-name {
   text-decoration: none;
@@ -84,28 +82,50 @@ a:-webkit-any-link:hover{
 }
 
 /*Ikon and button*/
-.btn-container {
-  border: 1px solid red;
+.image-btn-container {
+  position: relative;
 }
 
+.image-btn-container:hover .icons-container {
+  display:block;
+}
 .heart-icon, .play-icon, .dots-icon {
   width: 32px;
   height: 32px;
   filter: invert();
-  padding-right:10px;
-  padding-left:40px;
-  margin-left: 5px;
   z-index: -1;
+}
+
+.play-icon{
+  position:absolute;
+  margin:auto;
+  top: calc(50% - 10px); 
+  left: calc(50% - 10px);
+}
+
+.heart-icon{
+  position:absolute;
+  margin:auto;
+  top: calc(50% - 10px); 
+  left: calc(30% - 10px);
+}
+
+.dots-icon{
+  position:absolute;
+  margin:auto;
+  top: calc(50% - 10px); 
+  left: calc(70% - 10px);
 }
 
 .icons-container:hover{
   opacity: 1;
+  border: 1px solid green;
 }
 
 .play-icon:hover{
-  transform: scale(1.2);
+  transform: scale(1.8);
   opacity: 1;
-  
+  z-index: 1;
 }
 
 .heart-icon:hover{
@@ -119,15 +139,16 @@ a:-webkit-any-link:hover{
   opacity: 1;
 }
 
-
-@media only screen and (min-width: 744px) {
+/*Tablet*/
+@media only screen and (min-width: 600px) {
   .albums-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+/*Desktop*/
+@media only screen and (min-width: 992px) {
   .albums-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
