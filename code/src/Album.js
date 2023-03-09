@@ -16,11 +16,11 @@ export const Album = (props) => {
         <a href={props.item.external_urls.spotify} target="_blank" rel="noopener noreferrer">
           <img className="album-image" src={props.item.images.find((image) => image.width === 300).url} alt="album cover" />
         </a>
-        <div className="icons-container">
-          <img src="./icons/heart.svg" className="heart-icon" alt="heart icon" />
-          <img src="./icons/play.svg" className="play-icon" alt="play icon" />
-          <img src="./icons/dots.svg" className="dots-icon" alt="dots icon" />
-        </div>
+      </div>
+      <div className="btn-container">
+        <img src="./icons/heart.svg" className="heart-icon" alt="heart icon" />
+        <img src="./icons/play.svg" className="play-icon" alt="play icon" />
+        <img src="./icons/dots.svg" className="dots-icon" alt="dots icon" />
       </div>
 
       <div className="album-name">
@@ -30,7 +30,6 @@ export const Album = (props) => {
       <div className="artist-name">
         <h2>{artistLinks}</h2>
       </div>
-
     </div>
   )
 }

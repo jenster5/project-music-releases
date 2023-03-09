@@ -11,12 +11,15 @@ const albumItems = data.albums.items.map((item, index) => {
 
 export const App = () => {
   return (
-    <div>
-      {
-        albumItems.map((item) => (
+    <div className="main-container">
+      <h1>New albums & Singles</h1>
+      <hr />
+      <div className="albums-container">
+        {albumItems.map((item) => (
           <Album item={item} key={item.key} />
-        ))
-      }
+        ))}
+      </div>
     </div>
   )
 }
+
