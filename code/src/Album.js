@@ -12,16 +12,18 @@ export const Album = (props) => {
   return (
     <div className="body">
 
-      <div className="btn-container">
+      <div className="btn-image-container">
 
         <div className="image-container">
           <a href={props.item.external_urls.spotify} target="_blank" rel="noopener noreferrer">
             <img className="album-image" src={props.item.images.find((image) => image.width === 300).url} alt="album cover" />
           </a>
         </div>
-        <img src="./icons/heart.svg" className="heart-icon" alt="heart icon" />
-        <img src="./icons/play.svg" className="play-icon" alt="play icon" />
-        <img src="./icons/dots.svg" className="dots-icon" alt="dots icon" />
+        <div className="icons-container">
+          <img src="./icons/heart.svg" className="heart-icon" alt="heart icon" />
+          <img src="./icons/play.svg" className="play-icon" alt="play icon" />
+          <img src="./icons/dots.svg" className="dots-icon" alt="dots icon" />
+        </div>
       </div>
 
       <div className="album-name">
