@@ -9,5 +9,5 @@ Using pair programming we first attempted to use react components to display alb
  If we had more time we could make the icons responsive/clickable.
 
 ## View it live
-
+https://eva-and-jennifers-music-site.netlify.app/
 
