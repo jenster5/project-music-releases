@@ -97,18 +97,21 @@ a:-webkit-any-link:hover{
   position: relative;
 }
 
-/*
-.btn-image-container:hover .icons-container{
- visibility: visible;
+
+.btn-image-container:hover,
+.btn-image-container .image-container:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.btn-image-container .icons-container{
-  visibility:hidden;
-}*/
+.btn-image-container:hover .icons-container {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
 
 .icons-container {
   cursor: pointer;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.2s ease-in-out;
 }
 
