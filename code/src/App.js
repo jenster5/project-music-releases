@@ -1,6 +1,6 @@
 import React from 'react';
 import data from './data.json';
-import { Album } from './Album.js';
+import { Album } from './components/Album.js';
 
 console.log(data);
 
